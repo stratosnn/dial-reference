@@ -75,7 +75,7 @@ static const char ssdp_msearch[] =
     "M-SEARCH * HTTP/1.1\r\n"
     "HOST: 239.255.255.250:1900\r\n"
     "MAN: \"ssdp:discover\"\r\n"
-    "MX: 10\r\n"
+    "MX: 1\r\n"
     "ST: urn:dial-multiscreen-org:service:dial:1\r\n\r\n";
 
 static string getLocation(char *pResponse) 

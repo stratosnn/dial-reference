@@ -356,9 +356,10 @@ int main(int argc, char* argv[]) {
     // Sleep for 2 seconds to allow DIAL servers to response to MSEARCH.
     sleep(2);
 
-    if ( gUseMenu )
+    while(true)
     {
-        return handleUser(gpDiscovery);
+        gpDiscovery->send_mcast();
+        //sleep(1);
     }
 
     // not using the menu, just run the conformance test.
